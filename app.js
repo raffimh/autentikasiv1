@@ -10,7 +10,8 @@ const session = require("express-session");
 const passport = require("passport")
 const passportLocalMongoose = require("passport-local-mongoose");
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const findOrCreate = require("mongoose-findorcreate")
+const findOrCreate = require("mongoose-findorcreate");
+const PORT = 3000;
 
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
